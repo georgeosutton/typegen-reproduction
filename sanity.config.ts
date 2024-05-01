@@ -13,12 +13,7 @@ import {
 import { previewUrl } from 'sanity-plugin-iframe-pane/preview-url'
 
 // see https://www.sanity.io/docs/api-versioning for how versioning works
-import {
-  apiVersion,
-  dataset,
-  previewSecretId,
-  projectId,
-} from '~/lib/sanity.api'
+import { apiVersion, previewSecretId } from '~/lib/sanity.api'
 import { schema } from '~/schemas'
 
 const iframeOptions = {
@@ -34,8 +29,8 @@ export default defineConfig({
   basePath: '/studio',
   name: 'project-name',
   title: 'Project Name',
-  projectId,
-  dataset,
+  projectId: '8bqgrahv',
+  dataset: 'production',
   //edit schemas in './src/schemas'
   schema,
   plugins: [
